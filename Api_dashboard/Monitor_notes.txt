@@ -1,0 +1,9 @@
+
+git clone https://github.com/unitreerobotics/unitree_sdk2_python.git
+cd unitree_sdk2_python 
+sudo pip install .
+
+export CYCLONEDDS_URI='<CycloneDDS><Domain><General><NetworkInterfaceAddress>ens33</NetworkInterfaceAddress></General></Domain></CycloneDDS>'
+
+python3 unitree_sdk2_python/Monitor_Script.py ens33
+
